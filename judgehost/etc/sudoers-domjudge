@@ -1,0 +1,22 @@
+# Generated from 'sudoers-domjudge.in' on 2019年 04月 10日 星期三 11:56:20 CST.
+
+# Example sudoers configuration for DOMjudge judgehosts.
+# Check the file paths (especially the chroot prefix),
+# give it file mode 0440 and place this file into /etc/sudoers.d/
+# (most recent sudo versions; otherwise use an #include statement
+# in or add its content to the end of /etc/sudoers)
+
+yancy ALL=(root) NOPASSWD: /home/yancy/domjudge/judgehost/bin/runguard *
+yancy ALL=(root) NOPASSWD: /bin/cp -pR /dev/null ../dev/null
+yancy ALL=(root) NOPASSWD: /bin/chown -R yancy\: /home/yancy/domjudge/judgehost/judgings/*
+
+# The following is needed if you set USE_CHROOT=1 (recommended).
+# The chroot path below must match the path in chroot-startstop.sh.
+yancy ALL=(root) NOPASSWD: /bin/mount -n --bind /proc proc
+yancy ALL=(root) NOPASSWD: /bin/umount /*/proc
+yancy ALL=(root) NOPASSWD: /bin/mount --bind /chroot/domjudge/*
+yancy ALL=(root) NOPASSWD: /bin/mount -o remount\,ro\,bind /home/yancy/domjudge/judgehost/judgings/*
+yancy ALL=(root) NOPASSWD: /bin/umount /home/yancy/domjudge/judgehost/judgings/*
+yancy ALL=(root) NOPASSWD: /bin/cp -pR /dev/random dev
+yancy ALL=(root) NOPASSWD: /bin/cp -pR /dev/urandom dev
+

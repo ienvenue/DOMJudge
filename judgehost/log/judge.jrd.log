@@ -1,0 +1,184 @@
+[Apr 10 15:34:04.843] judgedaemon[3282]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 10 15:34:04.846] judgedaemon[3282]: Installing signal handlers
+[Apr 10 15:34:04.866] judgedaemon[3282]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 10 15:34:04.890] judgedaemon[3282]: API request POST judgehosts
+[Apr 10 15:34:04.933] judgedaemon[3282]: error: Error while executing curl POST to url http://localhost/domjudge/api/judgehosts: http status code: 401, response: 
+[Apr 10 15:38:17.712] judgedaemon[3684]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 10 15:38:17.715] judgedaemon[3684]: Installing signal handlers
+[Apr 10 15:38:17.715] judgedaemon[3684]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 10 15:38:17.718] judgedaemon[3684]: API request POST judgehosts
+[Apr 10 15:38:17.738] judgedaemon[3684]: error: Error while executing curl POST to url http://localhost/domjudge/api/judgehosts: http status code: 401, response: 
+[Apr 10 15:56:14.968] judgedaemon[3813]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 10 15:56:14.982] judgedaemon[3813]: Installing signal handlers
+[Apr 10 15:56:14.993] judgedaemon[3813]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 10 15:56:15.004] judgedaemon[3813]: API request POST judgehosts
+[Apr 10 15:56:15.043] judgedaemon[3813]: error: Error while executing curl POST to url http://localhost/domjudge/api/judgehosts: http status code: 401, response: 
+[Apr 10 16:15:20.539] judgedaemon[4367]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 10 16:15:20.542] judgedaemon[4367]: Installing signal handlers
+[Apr 10 16:15:20.542] judgedaemon[4367]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 10 16:15:20.546] judgedaemon[4367]: API request POST judgehosts
+[Apr 10 16:15:20.688] judgedaemon[4367]: API request GET config
+[Apr 10 16:15:20.804] judgedaemon[4367]: API request POST judgings
+[Apr 10 16:15:20.918] judgedaemon[4367]: No submissions in queue (for endpoint default), waiting...
+[Apr 10 16:52:23.835] judgedaemon[4367]: Judging submission s1 (endpoint default) (t2/p1/c), id j1...
+[Apr 10 16:52:23.835] judgedaemon[4367]: API request GET config
+[Apr 10 16:52:23.937] judgedaemon[4367]: API request GET config
+[Apr 10 16:52:24.036] judgedaemon[4367]: API request GET config
+[Apr 10 16:52:24.138] judgedaemon[4367]: API request GET config
+[Apr 10 16:52:24.238] judgedaemon[4367]: API request GET config
+[Apr 10 16:52:24.337] judgedaemon[4367]: Working directory: /home/yancy/domjudge/judgehost/judgings/jrd/endpoint-default/c2-s1-j1
+[Apr 10 16:52:24.354] judgedaemon[4367]: API request GET submission_files
+[Apr 10 16:52:24.454] judgedaemon[4367]: Fetching new executable 'c'
+[Apr 10 16:52:24.461] judgedaemon[4367]: API request GET executable
+[Apr 10 16:52:24.562] judgedaemon[4367]: Unzipping
+[Apr 10 16:52:24.587] judgedaemon[4367]: Compiling
+[4月 10 16:52:24.619] compile.sh[5265]: starting '/home/yancy/domjudge/judgehost/lib/judge/compile.sh', PID = 5265
+[4月 10 16:52:24.622] compile.sh[5265]: arguments: '/home/yancy/domjudge/judgehost/judgings/jrd/endpoint-default/executable/c/run' '/home/yancy/domjudge/judgehost/judgings/jrd/endpoint-default/c2-s1-j1'
+[4月 10 16:52:24.625] compile.sh[5265]: source file(s): test.c
+[4月 10 16:52:24.637] compile.sh[5265]: starting compile
+[4月 10 16:52:25.763] compile.sh[5265]: checking compilation exit-status
+[4月 10 16:52:25.768] compile.sh[5265]: Compilation successful
+[4月 10 16:52:25.772] compile.sh[5265]: exiting, code = '0'
+[Apr 10 16:52:25.775] judgedaemon[4367]: API request PUT judgings/1
+[Apr 10 16:52:25.880] judgedaemon[4367]: executing chroot script: 'chroot-startstop.sh start'
+[Apr 10 16:52:26.270] judgedaemon[4367]: API request GET config
+[Apr 10 16:52:26.373] judgedaemon[4367]: API request GET testcases
+[Apr 10 16:52:26.478] judgedaemon[4367]: Running testcase 1...
+[Apr 10 16:52:26.478] judgedaemon[4367]: API request GET testcase_files
+[Apr 10 16:52:26.578] judgedaemon[4367]: API request GET testcase_files
+[Apr 10 16:52:26.680] judgedaemon[4367]: Fetched new input,output testcase 1 for problem p1
+[Apr 10 16:52:26.688] judgedaemon[4367]: Fetching new executable 'compare'
+[Apr 10 16:52:26.696] judgedaemon[4367]: API request GET executable
+[Apr 10 16:52:26.799] judgedaemon[4367]: Unzipping
+[Apr 10 16:52:26.808] judgedaemon[4367]: Compiling
+[Apr 10 16:52:28.227] judgedaemon[4367]: Fetching new executable 'run'
+[Apr 10 16:52:28.233] judgedaemon[4367]: API request GET executable
+[Apr 10 16:52:28.336] judgedaemon[4367]: Unzipping
+[Apr 10 16:52:28.344] judgedaemon[4367]: Compiling
+[4月 10 16:52:28.367] testcase_run.sh[5419]: starting '/home/yancy/domjudge/judgehost/lib/judge/testcase_run.sh', PID = 5419
+[4月 10 16:52:28.370] testcase_run.sh[5419]: arguments: '/home/yancy/domjudge/judgehost/judgings/jrd/endpoint-default/testcase/testcase.1.1.b026324c6904b2a9cb4b88d6d61c81d1.in' '/home/yancy/domjudge/judgehost/judgings/jrd/endpoint-default/testcase/testcase.1.1.59ca0efa9f5633cb0371bbc0355478d8.out' '5:6' '/home/yancy/domjudge/judgehost/judgings/jrd/endpoint-default/c2-s1-j1/testcase001'
+[4月 10 16:52:28.372] testcase_run.sh[5419]: optionals: '/home/yancy/domjudge/judgehost/judgings/jrd/endpoint-default/executable/run/run' '/home/yancy/domjudge/judgehost/judgings/jrd/endpoint-default/executable/compare/run' ''
+[4月 10 16:52:28.375] testcase_run.sh[5419]: run_juryprog: '/home/yancy/domjudge/judgehost/judgings/jrd/endpoint-default/executable/run/runjury'
+[4月 10 16:52:28.382] testcase_run.sh[5419]: setting up testing (chroot) environment
+[4月 10 16:52:28.390] testcase_run.sh[5419]: creating /dev/null character-special device
+[4月 10 16:52:28.401] testcase_run.sh[5419]: running program (USE_CHROOT = 1)
+[4月 10 16:52:28.404] testcase_run.sh[5419]: runcheck: ./run testdata.in program.out sudo -n /home/yancy/domjudge/judgehost/bin/runguard -r /home/yancy/domjudge/judgehost/judgings/jrd/endpoint-default/c2-s1-j1/testcase001/.. --nproc=64 --no-core --streamsize=4096 --user=domjudge-run --group=domjudge-run --walltime=5:6 --cputime=5:6 --memsize=524288 --filesize=4096 --stderr=program.err --outmeta=program.meta -- /testcase001/execdir/program
+[4月 10 16:52:28.491] testcase_run.sh[5419]: comparing output
+[4月 10 16:52:28.496] testcase_run.sh[5419]: starting compare script '/home/yancy/domjudge/judgehost/judgings/jrd/endpoint-default/executable/compare/run'
+[4月 10 16:52:28.500] testcase_run.sh[5419]: runcheck: sudo -n /home/yancy/domjudge/judgehost/bin/runguard -u domjudge-run -g domjudge-run -m 2097152 -t 30 -c -f 540672 -s 540672 -M compare.meta -- /home/yancy/domjudge/judgehost/judgings/jrd/endpoint-default/executable/compare/run testdata.in testdata.out feedback/
+[4月 10 16:52:28.638] testcase_run.sh[5419]: checking compare script exit-status: 42
+[4月 10 16:52:28.643] testcase_run.sh[5419]: checking program run exit-status
+[4月 10 16:52:28.665] testcase_run.sh[5419]: exiting with status '0'
+[Apr 10 16:52:28.668] judgedaemon[4367]: API request POST judging_runs
+[Apr 10 16:52:28.808] judgedaemon[4367]: Testcase 1 done, result: correct
+[Apr 10 16:52:28.808] judgedaemon[4367]: API request GET testcases
+[Apr 10 16:52:28.907] judgedaemon[4367]: executing chroot script: 'chroot-startstop.sh stop'
+[Apr 10 16:52:29.107] judgedaemon[4367]: Judging s1/j1 finished
+[Apr 10 16:52:29.107] judgedaemon[4367]: API request GET config
+[Apr 10 16:52:29.214] judgedaemon[4367]: API request POST judgings
+[Apr 10 16:52:29.320] judgedaemon[4367]: No submissions in queue (for endpoint default), waiting...
+[Apr 10 17:04:26.996] judgedaemon[1935]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 10 17:04:27.007] judgedaemon[1935]: Installing signal handlers
+[Apr 10 17:04:27.025] judgedaemon[1935]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 10 17:04:27.036] judgedaemon[1935]: API request POST judgehosts
+[Apr 10 17:04:27.213] judgedaemon[1935]: API request GET config
+[Apr 10 17:04:27.325] judgedaemon[1935]: API request POST judgings
+[Apr 10 17:04:27.442] judgedaemon[1935]: No submissions in queue (for endpoint default), waiting...
+[Apr 10 17:04:36.545] judgedaemon[1935]: Signal 2 received
+[Apr 10 17:04:36.545] judgedaemon[1935]: Received signal, exiting.
+[Apr 10 17:09:10.389] judgedaemon[2699]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 10 17:09:10.402] judgedaemon[2699]: Installing signal handlers
+[Apr 10 17:09:10.421] judgedaemon[2699]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 10 17:09:10.432] judgedaemon[2699]: API request POST judgehosts
+[Apr 10 17:09:10.471] judgedaemon[2699]: error: Error while executing curl POST to url http://localhost/domjudge/api/judgehosts: http status code: 401, response: 
+[Apr 10 17:09:34.655] judgedaemon[2724]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 10 17:09:34.657] judgedaemon[2724]: Installing signal handlers
+[Apr 10 17:09:34.658] judgedaemon[2724]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 10 17:09:34.661] judgedaemon[2724]: API request POST judgehosts
+[Apr 10 17:09:34.676] judgedaemon[2724]: error: Error while executing curl POST to url http://localhost/domjudge/api/judgehosts: http status code: 401, response: 
+[Apr 10 17:11:19.649] judgedaemon[2982]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 10 17:11:19.652] judgedaemon[2982]: Installing signal handlers
+[Apr 10 17:11:19.652] judgedaemon[2982]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 10 17:11:19.657] judgedaemon[2982]: API request POST judgehosts
+[Apr 10 17:11:19.811] judgedaemon[2982]: API request GET config
+[Apr 10 17:11:19.923] judgedaemon[2982]: API request POST judgings
+[Apr 10 17:11:20.044] judgedaemon[2982]: No submissions in queue (for endpoint default), waiting...
+[Apr 10 17:11:40.633] judgedaemon[2982]: Signal 1 received
+[Apr 10 17:11:40.634] judgedaemon[2982]: Received signal, exiting.
+[Apr 10 17:33:11.424] judgedaemon[2214]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 10 17:33:11.436] judgedaemon[2214]: Installing signal handlers
+[Apr 10 17:33:11.447] judgedaemon[2214]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 10 17:33:11.458] judgedaemon[2214]: API request POST judgehosts
+[Apr 10 17:33:11.662] judgedaemon[2214]: API request GET config
+[Apr 10 17:33:11.778] judgedaemon[2214]: API request POST judgings
+[Apr 10 17:33:11.903] judgedaemon[2214]: No submissions in queue (for endpoint default), waiting...
+[Apr 11 09:14:24.864] judgedaemon[2214]: Signal 1 received
+[Apr 11 09:14:24.872] judgedaemon[2214]: Received signal, exiting.
+[Apr 11 14:17:59.880] judgedaemon[3224]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 11 14:17:59.892] judgedaemon[3224]: Installing signal handlers
+[Apr 11 14:17:59.911] judgedaemon[3224]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 11 14:17:59.922] judgedaemon[3224]: API request POST judgehosts
+[Apr 11 14:18:00.051] judgedaemon[3224]: error: Error while executing curl POST to url http://localhost/domjudge/api/judgehosts: http status code: 401, response: 
+[Apr 11 14:21:40.708] judgedaemon[3270]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 11 14:21:40.711] judgedaemon[3270]: Installing signal handlers
+[Apr 11 14:21:40.711] judgedaemon[3270]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 11 14:21:40.714] judgedaemon[3270]: API request POST judgehosts
+[Apr 11 14:21:40.729] judgedaemon[3270]: error: Error while executing curl POST to url http://localhost/domjudge/api/judgehosts: http status code: 401, response: 
+[Apr 11 14:28:58.898] judgedaemon[2545]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 11 14:28:58.912] judgedaemon[2545]: Installing signal handlers
+[Apr 11 14:28:58.931] judgedaemon[2545]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 11 14:28:58.942] judgedaemon[2545]: API request POST judgehosts
+[Apr 11 14:28:59.147] judgedaemon[2545]: error: Error while executing curl POST to url http://localhost/domjudge/api/judgehosts: http status code: 401, response: 
+[Apr 11 15:52:34.949] judgedaemon[2481]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 11 15:52:34.975] judgedaemon[2481]: Installing signal handlers
+[Apr 11 15:52:34.994] judgedaemon[2481]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 11 15:52:35.005] judgedaemon[2481]: API request POST judgehosts
+[Apr 11 15:52:38.052] judgedaemon[2494]: daemonizing with PID = 2494
+[Apr 11 15:52:38.053] judgedaemon[2494]: API request GET config
+[Apr 11 15:52:38.178] judgedaemon[2494]: API request POST judgings
+[Apr 11 15:52:38.337] judgedaemon[2494]: No submissions in queue (for endpoint default), waiting...
+[Apr 12 09:47:42.941] judgedaemon[13052]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 12 09:47:42.947] judgedaemon[13052]: Installing signal handlers
+[Apr 12 09:47:42.948] judgedaemon[13052]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 12 09:47:42.952] judgedaemon[13052]: API request POST judgehosts
+[Apr 12 09:47:43.074] judgedaemon[13061]: error: cannot create pidfile '/home/yancy/domjudge/judgehost/run/judgedaemon.pid'
+[Apr 12 15:26:01.043] judgedaemon[8179]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 12 15:26:01.055] judgedaemon[8179]: Installing signal handlers
+[Apr 12 15:26:01.064] judgedaemon[8179]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 12 15:26:01.078] judgedaemon[8179]: API request POST judgehosts
+[Apr 12 15:26:01.733] judgedaemon[8179]: API request GET config
+[Apr 12 15:26:01.846] judgedaemon[8179]: API request POST judgings
+[Apr 12 15:26:01.990] judgedaemon[8179]: No submissions in queue (for endpoint default), waiting...
+[Apr 12 15:45:03.795] judgedaemon[1979]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 12 15:45:03.807] judgedaemon[1979]: Installing signal handlers
+[Apr 12 15:45:03.827] judgedaemon[1979]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 12 15:45:03.838] judgedaemon[1979]: API request POST judgehosts
+[Apr 12 15:45:03.876] judgedaemon[1979]: error: Error while executing curl POST to url http://localhost/domjudge/api/judgehosts: http status code: 401, response: 
+[Apr 12 15:45:54.128] judgedaemon[2047]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 12 15:45:54.131] judgedaemon[2047]: Installing signal handlers
+[Apr 12 15:45:54.131] judgedaemon[2047]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 12 15:45:54.134] judgedaemon[2047]: API request POST judgehosts
+[Apr 12 15:45:54.149] judgedaemon[2047]: error: Error while executing curl POST to url http://localhost/domjudge/api/judgehosts: http status code: 401, response: 
+[Apr 12 15:52:49.082] judgedaemon[1990]: Judge started on jrd [DOMjudge/6.0.3]
+[Apr 12 15:52:49.094] judgedaemon[1990]: Installing signal handlers
+[Apr 12 15:52:49.114] judgedaemon[1990]: Registering judgehost on endpoint http://localhost/domjudge/api
+[Apr 12 15:52:49.125] judgedaemon[1990]: API request POST judgehosts
+[Apr 12 15:52:49.338] judgedaemon[1990]: API request GET config
+[Apr 12 15:52:49.436] judgedaemon[1990]: API request POST judgings
+[Apr 12 15:52:49.568] judgedaemon[1990]: No submissions in queue (for endpoint default), waiting...
+[Apr 12 15:53:09.974] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:53:14.982] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:53:19.991] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:53:24.000] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:53:30.010] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:53:35.019] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:53:40.028] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:53:45.037] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:53:50.047] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:53:55.062] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:54:00.070] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:54:05.079] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:54:10.094] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:54:15.102] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:54:20.111] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
+[Apr 12 15:54:25.119] judgedaemon[1990]: warning: Error while executing curl POST to url http://localhost/domjudge/api/judgings: http status code: 401, response: 
